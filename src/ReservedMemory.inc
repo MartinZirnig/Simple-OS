@@ -1,0 +1,1 @@
+%define KRNEL_START 0x100000
