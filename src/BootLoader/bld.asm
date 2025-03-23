@@ -132,7 +132,7 @@ JMP CODE64:.long_mode
 
 ; Unavailable long mode handling
 no_long_mode:
-    MOV ESI, UNAVAILABLE_LONG_MODE_MSG
+    MOV SI, UNAVAILABLE_LONG_MODE_MSG
     CALL print_string
     JMP fail
 
@@ -148,7 +148,8 @@ MOV GS, AX
 MOV SS, AX
 ; Now in long mode
 
-    
+; === Load kernell ===
+
 
 
 
